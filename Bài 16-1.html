@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="theCanvas" width="500" height="400" style="border:1px solid #d3d3d3;"></canvas>
+<script>
+    class rect {
+        width;
+        height;
+        x;
+        y;
+        getInfo(){
+            console.log(this.width + ' ' + this.height)
+        }
+        makerect(){
+            let a = document.getElementById('theCanvas').getContext('2d')
+            a.fillRect(this.x,this.y,this.width,this.height)
+        }
+        perimeter(){
+            console.log((this.width+this.height)*2)
+        }
+        area(){
+            console.log(this.width*this.height)
+        }
+
+    }
+    let h1 = new rect();
+    h1.width = 300;
+    h1.height = 200;
+    h1.x = 50;
+    h1.y = 50;
+    h1.getInfo();
+    h1.makerect();
+    h1.perimeter();
+    h1.area();
+</script>
+</body>
+</html>

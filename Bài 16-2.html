@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  class temperture {
+    cInput;
+
+    covertF(){
+      let i = (1.8*this.cInput) +32
+      document.write('Nhiệt độ F : ' + i + ' độ<br>')
+    }
+    convertK(){
+      document.write('Nhiệt độ K : ' + (this.cInput+273.15) + 'độ <br>')
+    }
+  }
+  let temp = new temperture()
+  temp.cInput = 25
+  temp.covertF();
+  temp.convertK();
+
+</script>
+</body>
+</html>

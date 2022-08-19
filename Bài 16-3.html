@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2 id="battery1"></h2>
+<p id="powerStatus" value="On"></p>
+<input id="messageInp">
+<button onclick="sendMessage()">Send Message</button>
+<br>
+<button onclick="togglePower()">Power</button>
+<br>
+<button onclick="chargeBattery()">Charge Phone</button><br>
+<button onclick="checkPower()">Check Status</button>
+<h2 id="battery2"></h2>
+<button onclick="checkInbox()">Inbox</button>
+
+<script>
+    class mobile {
+        battery;
+        power;
+        receivedMessage;
+
+        checkPower(){
+            let i = document.getElementById('powerStatus').value
+            if (i === 'On'){
+                alert('The phone is running')
+                console.log(i)
+            }
+            else{
+                alert('The phone is turned off')
+                console.log(i)
+            }
+        }
+    }
+
+</script>
+</body>
+</html>
